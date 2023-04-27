@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Felicidades婚禮佈置</title>
+
+    <!-- web icon -->
+    <link rel="shortcut icon" href="./images/diamond.png" />
+
+    <!-- google字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans+TC:wght@100;400;700&display=swap" rel="stylesheet">
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- 本站使用的css -->
+    <link rel="stylesheet" href="./stylesheets/all.css">
+
+  </head>
+  <!-- 這裡的scroll是滾動監控-->
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
+
+    <!-- 導覽列 -->
+    <!-- 這裡的sticky-top是固定導覽列在上方-->
+    <nav class="navbar navbar-expand-lg bg-white shadow sticky-top">
+        <div class="container">
+            <h1 class="logo mb-0">
+                <a class="navbar-brand" href="./index.html">Felicidades</a>
+            </h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mt-3 mt-lg-auto" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item border-top border-top-lg-0 mx-2 py-2 w-100 w-lg-auto text-center">
+                        <a class="nav-link" href="./index.html">首頁</a>
+                    </li>
+                    <li class="nav-item border-top border-top-lg-0 mx-2 py-2 w-100 w-lg-auto text-center">
+                        <a class="nav-link" href="./index.html#abouttitle">服務介紹</a>
+                    </li>
+                    <li class="nav-item border-top border-top-lg-0 mx-2 py-2 w-100 w-lg-auto text-center">
+                        <a class="nav-link" href="./index.html#plantitle">佈置方案</a>
+                    </li>
+                    <li class="nav-item border-top border-top-lg-0 mx-2 py-2 w-100 w-lg-auto text-center">
+                        <a class="nav-link" href="./question.html">常見問題</a>
+                    </li>
+                    <li class="nav-item mx-3 py-3 w-100 w-lg-auto border-top border-top-lg-0 text-center">
+                        <a class="btn btn-goldlight text-white" href="./planform.html">填寫訂單</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 表單 -->
+    <section>
+        <div class="que-title mb-5">
+            <div class="container text-center py-5">
+                <span class="fw-bold fs-4 text-goldlight">Choose a Plan</span>
+                <h2 class="text-fashiongray text-center mt-1">選擇適合您的方案</h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <!-- 這裡的shadow-lg變成中斷點了 -->
+                    <form action="" class="shadow-lg p-lg-4 rounded needs-validation" novalidate>
+                        <h3 class="deco-line mb-3 h4">選擇方案</h3>
+                        <div class="row row-cols-1 row-cols-lg-3 gx-2 gy-3">
+                            <div class="col">
+                                <!-- 更改了btn的hover。變成白色 -->
+                                <button type="button" class="btn btn-outline-goldlight bnt-lg w-100 py-3 fs-6">
+                                    道具出租<br class="d-none d-lg-block">
+                                    <strong>NT 6,000</strong>
+                                </button>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-outline-goldlight bnt-lg w-100 py-3 fs-6">
+                                    專人到場佈置<br class="d-none d-lg-block">
+                                    <strong>NT 18,000</strong>
+                                </button>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-outline-goldlight bnt-lg w-100 py-3 fs-6">
+                                    客製化專人佈置<br class="d-none d-lg-block">
+                                    <strong>客製化詢價</strong>
+                                </button>
+                            </div>
+                        </div>
+                        <h3 class="deco-line mb-3 h4 mt-5">填寫資料</h3>
+                        <div class="row gx-3 gy-4">
+                            <div class="col-lg-6">
+                                <label for="firstname" class="form-label">
+                                    名字
+                                </label>
+                                <input type="text" class="form-control" id="firstname" required>
+                                <div class="invalid-feedback">
+                                    必須填寫
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="lastname" class="form-label">
+                                    姓氏
+                                </label>
+                                <input type="text" class="form-control" id="lastname" required>
+                                <div class="invalid-feedback">
+                                    必須填寫
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <label for="phonenumber" class="form-label">
+                                    手機號碼
+                                </label>
+                                <input type="tel" class="form-control" id="phonenumber" required>
+                                <div class="invalid-feedback">
+                                    必須填寫
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <label for="email" class="form-label">
+                                    電子郵件
+                                </label>
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                                <div class="invalid-feedback">
+                                    必須填寫
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <label for="address" class="form-label">
+                                    住址
+                                </label>
+                                <input type="text" class="form-control" id="address" required>
+                                <div class="invalid-feedback">
+                                    必須填寫
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <label for="time" class="form-label">
+                                    方便聯繫時間
+                                </label>
+                                <select id="time" class="form-select" aria-label="Default select example" required>
+                                    <option selected disabled value="">選擇時段...</option>
+                                    <option value="1">9:00~11:00(早上時段)</option>
+                                    <option value="2">11:00~13:00(中午時段)</option>
+                                    <option value="3">13:00~18:00(下午時段)</option>
+                                    <option value="4">18:00~21:00(晚上時段)</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    請選取時段
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <label for="buyserve" class="form-label d-block">
+                                    加購服務
+                                </label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">婚禮胸花</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2">風格氣球</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                    <label class="form-check-label" for="inlineCheckbox3">設計款簽名板</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <label for="remarks" class="form-label">
+                                    備註
+                                </label>
+                                <textarea class="form-control" id="remarks" rows="3"></textarea>
+                            </div>
+                            <div class="col-lg-12">
+                                <button class="btn btn-goldlight w-100 text-white" type="submit">
+                                    提交
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- footer -->
+    <footer class="footer mt-5">
+        <div class="bg-milktea py-5">
+            <div class="container">
+                <h3 class="h2 text-fashiongray text-center mb-5">需要其他協助嗎？</h3>
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8">
+                        <ul class="row list-unstyled g-4 row-cols-1 row-cols-lg-3 align-items-center">
+                            <li class="col">
+                                <div class="footer-card card px-2 py-3 text-center border-0">
+                                    <a href="#" class="fs-5 text-decoration-none text-white">
+                                        <i class="bi bi-telephone-fill"></i>
+                                        00-2345-9876
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="col">
+                                <div class="footer-card card px-2 py-3 text-center border-0">
+                                    <a href="#" class="fs-5 text-decoration-none text-white">
+                                        <i class="bi bi-facebook"></i>
+                                        Felicidades
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="col">
+                                <div class="footer-card card px-2 py-3 text-center border-0">
+                                    <a href="#" class="fs-5 text-decoration-none text-white">
+                                        <i class="bi bi-patch-question-fill"></i>
+                                        服務條款
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-secondary py-4">
+            <p class="text-center text-white align-items-center mb-0">
+                Copyright © 2023 Felicidades婚禮佈置.All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- gotop按鈕 -->
+    <div class="gotop d-none d-lg-block">
+        <a href="#" class="gotopicon text-goldlight fs-1">
+            <i class="bi bi-arrow-up-circle-fill"></i>
+        </a>
+    </div>
+
+
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script> 
+
+    <script src="./js/jquery-3.6.4.min.js"></script>
+    <script src="./js/all.js"></script>
+
+    <!-- 提交表單的js-->
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+  </body>
+</html>

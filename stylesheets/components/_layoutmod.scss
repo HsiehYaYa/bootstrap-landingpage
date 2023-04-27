@@ -1,0 +1,38 @@
+//nav按a連結滾動到指定id時，導覽列會遮住標題，加入scroll-padding-top就可以解決。
+:root {
+    scroll-padding-top: 6rem;
+}
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+    letter-spacing:.05rem;
+    position: relative;
+}
+h3{
+    letter-spacing: .1rem;
+}
+p{
+    font-weight: 100;
+}
+
+//導航列
+.logo{
+    font-family: 'Dancing Script', cursive;
+}
+
+//footer區塊
+.footer-card{
+    transition: 0.4s;
+    background-color: $pinklight;
+    &:hover{
+        background-color: $goldlight;
+        transform: scale(1.05); 
+    }
+}
+
+//gotop按鈕
+.gotopicon{
+    display: none;
+    position: fixed;
+    bottom: 130px;
+    right: 10px;
+}

@@ -1,0 +1,40 @@
+//banner圖
+.header{
+    height: 650px;
+    background-image: url(../images/home_bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+//服務介紹
+.decoplan{
+    background-image: url(../images/bg_pattern.png);
+}
+//放大和旋轉的動態效果
+.decoplan-item{
+    transition: 0.4s;
+    &:hover{
+        transform: scale(1.05); 
+    }
+    .decoplan-icon{
+        transform: rotateY(0);
+        transition: all 1s ease-in-out;
+        &:hover{
+            transform: rotateY(-360deg);
+            transition: all 1s ease-in-out;
+        }
+    }
+}
+
+
+//方案費用
+.plan-img{
+    height: 200px;
+    object-fit: cover;
+}
+.select-p-item{
+    transition: 0.4s;
+    &:hover{
+        transform: scale(1.05);
+    }
+}
